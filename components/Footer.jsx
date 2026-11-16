@@ -115,11 +115,11 @@ export default function Footer() {
           aria-hidden="true"
           style={{
             marginTop: mob ? 56 : 90,
-            fontFamily: SERIF,
-            fontWeight: 400,
+            fontFamily: 'var(--display)',
+            fontWeight: 'var(--display-weight)',
             fontSize: mob ? '24vw' : 'min(22vw, 330px)',
             lineHeight: 0.85,
-            letterSpacing: '0.02em',
+            letterSpacing: 'var(--display-spacing)',
             whiteSpace: 'nowrap',
             overflow: 'hidden',
             textAlign: 'center',

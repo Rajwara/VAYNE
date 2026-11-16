@@ -21,7 +21,7 @@ Open http://localhost:3000.
 
 ## Theme switcher
 
-The floating **Theme** button (bottom-left) lets you try 8 colour palettes and 6 font pairings with one click. The choice is saved in your browser only. **Copy** puts the current palette's hex values and font names on the clipboard.
+The floating **Theme** button (bottom-left) lets you try 9 colour palettes and 7 font pairings with one click. The choice is saved in your browser only. **Copy** puts the current palette's hex values and font names on the clipboard.
 
 To make a choice permanent, change the defaults in `app/globals.css` (`:root` variables, `--serif`, `--sans`) and the first entries in `lib/themes.js`.
 
