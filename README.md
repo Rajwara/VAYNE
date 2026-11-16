@@ -35,3 +35,7 @@ To make a choice permanent, change the defaults in `app/globals.css` (`:root` va
 - `public/` – self-hosted fonts, bottle and photo images, OG image
 
 Forms (newsletter, contact, stockist enquiry) and checkout are front-end only; connect them to a service of your choice.
+
+## Troubleshooting Vercel
+
+If the deployed site shows `404 NOT_FOUND`, open the project in Vercel → **Settings → Build and Deployment** and make sure **Framework Preset** is **Next.js**, **Root Directory** is empty, and **Output Directory** is not overridden. Then redeploy. `vercel.json` already pins the framework to Next.js.
