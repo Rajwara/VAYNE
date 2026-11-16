@@ -1,0 +1,20 @@
+{
+  "name": "vayne",
+  "version": "1.0.0",
+  "private": true,
+  "description": "VAYNE — small-batch perfume house website (Next.js).",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "dependencies": {
+    "lenis": "^1.3.27",
+    "next": "^16.4.4",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  }
+}
