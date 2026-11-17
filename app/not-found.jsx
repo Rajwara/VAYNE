@@ -1,4 +1,5 @@
 import NotFound from '@/components/pages/NotFound';
+import SiteChrome from '@/components/SiteChrome';
 
 export const metadata = {
   title: 'Not found',
@@ -6,5 +7,9 @@ export const metadata = {
 };
 
 export default function NotFoundPage() {
-  return <NotFound />;
+  return (
+    <SiteChrome>
+      <NotFound />
+    </SiteChrome>
+  );
 }

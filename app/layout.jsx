@@ -1,12 +1,6 @@
 import './globals.css';
-import Footer from '@/components/Footer';
-import Nav from '@/components/Nav';
-import SmoothScroll from '@/components/SmoothScroll';
-import ThemeSwitcher from '@/components/ThemeSwitcher';
+import { showSwitcher } from '@/components/SiteChrome';
 import { FONTS, PALETTES, THEME_KEY } from '@/lib/themes';
-
-// Set NEXT_PUBLIC_THEME_SWITCHER=off on Vercel to hide the floating theme button.
-const showSwitcher = process.env.NEXT_PUBLIC_THEME_SWITCHER !== 'off';
 
 // Applies a saved theme before first paint so there is no colour flash on reload.
 const restoreTheme = `try{var t=JSON.parse(localStorage.getItem(${JSON.stringify(THEME_KEY)})||'null');if(t){var P=${JSON.stringify(
@@ -55,16 +49,7 @@ export default function RootLayout({ children }) {
         <link rel="preload" href="/fonts/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2" as="font" type="font/woff2" crossOrigin="" />
         {showSwitcher && <script dangerouslySetInnerHTML={{ __html: restoreTheme }} />}
       </head>
-      <body>
-        <SmoothScroll />
-        <div className="site">
-          <Nav />
-          <div className="nav-spacer" aria-hidden="true" />
-          <main>{children}</main>
-          <Footer />
-        </div>
-        {showSwitcher && <ThemeSwitcher />}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
